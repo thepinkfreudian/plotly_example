@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css" type="text/css">
+		 <script src="jquery.js"></script>
+		 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	</head>
+	<body>
+		<div class="header">
+			<h1>Organization Comparison</h1>
+		</div>
+		<div class="container">
+			<div class="select-list">
+				<span class="select-span">Select data set:</span>
+				<select id="data-filter">
+					<option value="dataset-1">Data Set 1</option>
+					<option value="dataset-2">Data Set 2</option>
+				</select>
+			</div>
+			<div class="plot-box">
+				<div id="plot"></div>
+				<div id="plot-description">
+					<p>Plot description goes here.</p>
+				</div>
+			</div>
+		</div>
+		<div class="footer"> </div>
+		<script src="plot.js"></script>
+		 <script>
+			$(document).ready(function() {
+				getData(file);
+			})
+		 </script>
+	</body>
+</html>
